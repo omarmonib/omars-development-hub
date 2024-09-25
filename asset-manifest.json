@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/omarmonib/omars-development-hub.git/static/css/main.93565189.css",
-    "main.js": "/omarmonib/omars-development-hub.git/static/js/main.1d2d9778.js",
-    "static/js/453.72bdca91.chunk.js": "/omarmonib/omars-development-hub.git/static/js/453.72bdca91.chunk.js",
-    "index.html": "/omarmonib/omars-development-hub.git/index.html",
-    "main.93565189.css.map": "/omarmonib/omars-development-hub.git/static/css/main.93565189.css.map",
-    "main.1d2d9778.js.map": "/omarmonib/omars-development-hub.git/static/js/main.1d2d9778.js.map",
-    "453.72bdca91.chunk.js.map": "/omarmonib/omars-development-hub.git/static/js/453.72bdca91.chunk.js.map"
+    "main.css": "/omars-development-hub/static/css/main.93565189.css",
+    "main.js": "/omars-development-hub/static/js/main.8c62185f.js",
+    "static/js/453.72bdca91.chunk.js": "/omars-development-hub/static/js/453.72bdca91.chunk.js",
+    "index.html": "/omars-development-hub/index.html",
+    "main.93565189.css.map": "/omars-development-hub/static/css/main.93565189.css.map",
+    "main.8c62185f.js.map": "/omars-development-hub/static/js/main.8c62185f.js.map",
+    "453.72bdca91.chunk.js.map": "/omars-development-hub/static/js/453.72bdca91.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93565189.css",
-    "static/js/main.1d2d9778.js"
+    "static/js/main.8c62185f.js"
   ]
 }
