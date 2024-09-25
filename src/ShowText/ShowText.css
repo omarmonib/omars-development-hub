@@ -1,0 +1,67 @@
+/* ShowText.css */
+.toggle-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.toggle-text-container .Def-text {
+    color: #6d9281;
+    font-size: 20px;
+}
+
+.input-text {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    width: 30%;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: #45a049;
+}
+
+.error-text {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.success-text {
+    color: green;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.displayed-text {
+    color: #000;
+    background-color: rgba(220, 245, 223, 0.192);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 20%;
+    height: 5vh;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal ;
+    overflow: scroll;
+    font-size: 18PX;
+    font-weight: bold;
+}

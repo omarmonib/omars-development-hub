@@ -1,0 +1,103 @@
+/* Style for the main wrapper to center the Countdown Timer */
+.Wrapper-CountDwnTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container for the countdown timer */
+.CountDwnTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.CountDwnTime:hover {
+    border: solid rgba(103, 125, 106, 0.5);
+    box-shadow: 0 4px 12px rgba(103, 125, 106, 0.5);
+}
+
+/* Title styling */
+.CountDwnTime h1 {
+    font-size: 28px;
+    color: #a5a1a1;
+    margin-bottom: 20px;
+}
+
+/* Timer display */
+.CountDwnTime h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Label for the input */
+.CountDwnTime label {
+    font-size: 18px;
+    color: #a5a1a1;
+    margin-bottom: 10px;
+}
+
+/* Input field styling */
+.CountDwnTime input[type='number'] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+/* Change border color on focus */
+.CountDwnTime input[type='number']:focus {
+    border-color: #007bff;
+}
+
+/* Button styling */
+.CountDwnTime button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Button hover effects */
+.CountDwnTime button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Disabled button styling */
+.CountDwnTime button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Pause/Resume button alternative style */
+.CountDwnTime button:nth-of-type(2) {
+    background-color: #ffc107;
+    color: black;
+}
+
+.CountDwnTime button:nth-of-type(2):hover {
+    background-color: #e0a800;
+}

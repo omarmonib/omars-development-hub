@@ -1,0 +1,163 @@
+/* Variables for colors */
+:root {
+    --main-bg-color: #677D6A;
+    --hover-bg-color: #677d6a8e;
+    --input-focus-color: #007bff;
+    --delete-btn-bg: #ff4d4d;
+    --delete-btn-hover-bg: #cc0000;
+    --light-border: #5e7a600d;
+}
+
+/* General Reset for box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Main container for the ToDo App */
+.ToDo-Wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ToDo container styling */
+.ToDo-Container {
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    margin: auto;
+}
+
+.ToDo-Container:hover {
+    border-color: rgba(103, 125, 106, 0.5);
+    box-shadow: 0 4px 12px rgba(103, 125, 106, 0.5);
+}
+
+.ToDo-Container h1 {
+    color: #6e6e6e;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input field and Add button styling */
+.ToDo-Container input[type='text'] {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.ToDo-Container input[type='text']:focus {
+    border-color: var(--input-focus-color);
+}
+
+.ToDo-Container button {
+    width: 10rem;
+    padding: 10px 0;
+    background-color: var(--main-bg-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.ToDo-Container button:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* Task list styling */
+.ToDo-Form {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Task and button layout */
+.Space-User {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Space-User button {
+    height: 50%;
+}
+
+/* Task item styling */
+.ToDo-Form li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid var(--light-border);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: start;
+    transition: box-shadow 0.5s;
+}
+
+.ToDo-Form li:hover {
+    box-shadow: 0 2px 4px rgba(206, 205, 205, 0.1);
+}
+
+/* Delete button styling */
+.ToDo-Form li button {
+    background-color: var(--delete-btn-bg);
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    width: 35%;
+}
+
+.ToDo-Form li button:hover {
+    background-color: var(--delete-btn-hover-bg);
+}
+
+/* Paragraph styling */
+.ToDo-Container p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .ToDo-Container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .Space-User input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ToDo-Container button {
+        width: 100%;
+    }
+}

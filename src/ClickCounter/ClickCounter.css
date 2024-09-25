@@ -1,0 +1,54 @@
+.Counter-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.click-counter-container {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.click-counter-container:hover {
+  border: solid rgba(103, 125, 106, 0.5);
+  box-shadow: 0 4px 12px rgba(103, 125, 106, 0.5);
+}
+
+.click-counter-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.click-counter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.click-counter-btn:hover {
+  border: solid rgba(103, 125, 106, 0.5);
+  box-shadow: 0 4px 12px rgba(103, 125, 106, 0.5);
+}
+
+.btn-increase {
+  background-color: #4caf50; /* Green color for increase button */
+  color: white;
+}
+
+.btn-decrease {
+  background-color: #f44336; /* Red color for decrease button */
+  color: white;
+}
+
+.btn-reset {
+  background-color: #ff9800; /* Orange color for reset button */
+  color: white;
+}

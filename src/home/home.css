@@ -1,0 +1,164 @@
+/* General Styles */
+html {
+  background-color: #2a2a2f;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.logo {
+  color: #2a2a2f;
+  font-size: 2.5rem;
+  margin: 2rem 0 ;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo span {
+  text-shadow: 
+    1px 1px 0 rgba(103, 125, 106, 0.7),
+    -1px 1px 0 rgba(103, 125, 106, 0.5),
+    1px -1px 0 rgba(103, 125, 106, 0.5),
+    -1px -1px 0 rgba(103, 125, 106, 0.5);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo span:hover {
+  transform: scale(1.1);
+  text-shadow: 
+    1px 1px 0 rgba(244, 247, 245, 0.8),
+    -1px 1px 0 rgba(244, 247, 245, 0.6),
+    1px -1px 0 rgba(244, 247, 245, 0.6),
+    -1px -1px 0 rgba(244, 247, 245, 0.6);
+}
+
+.component-list-container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+/* Button Styles */
+.component-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  border: 1px solid #40534C;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #677D6A;
+  color: #1A3636;
+  transition: all 0.3s ease-in-out;
+}
+
+.component-btn:hover {
+  color: #26486e;
+  background-color: #5e7a60;
+  box-shadow: 0 4px 12px rgba(103, 125, 106, 0.5);
+}
+
+/* Heading and Label Styles */
+.component-list-container h1,
+.component-list-container label {
+  color: #D6BD98;
+}
+
+.component-list-container h1 {
+  font-size: 2rem;
+}
+
+.component-list-container label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* List Styles */
+.component-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/* List Item Styles */
+.component-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #5e7a600d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  gap: 1.5rem;
+}
+
+.component-list li:hover {
+  border-color: rgba(103, 125, 106, 0.5);
+  box-shadow: 0 4px 12px rgba(103, 125, 106, 0.5);
+}
+
+/* Button Group Styles */
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Designer Signature */
+.designer-signature {
+  text-align: center;
+  font-size: 1rem;
+  color: #EDE8DC;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #2a2a2f;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .component-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .component-list-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .component-list-container label {
+    font-size: 1.4rem;
+  }
+
+  .component-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .component-list {
+    grid-template-columns: 1fr;
+  }
+
+  .component-list-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .component-list-container label {
+    font-size: 1.2rem;
+  }
+}

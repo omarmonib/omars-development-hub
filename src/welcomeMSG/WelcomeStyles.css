@@ -1,0 +1,116 @@
+/* Welcome component styles */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.Welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Welcome:hover,
+.Welcome input:hover {
+    border: solid rgba(103, 125, 106, 0.5);
+    box-shadow: 0 4px 12px rgba(103, 125, 106, 0.5);
+}
+
+.Welcome input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.Welcome input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.Welcome h2,
+.Welcome h3 {
+    text-align: center;
+}
+
+.Welcome h1 {
+    color: #D6BD98;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 480px) {
+    .Welcome {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .Welcome h1 {
+        font-size: 1.5rem;
+    }
+
+    .Welcome input {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional styles for medium-sized devices */
+@media (min-width: 481px) and (max-width: 768px) {
+    .Welcome {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .Welcome h1 {
+        font-size: 1.7rem;
+    }
+
+    .Welcome input {
+        font-size: 1rem;
+    }
+}
+
+.go-back-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.go-back-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.go-back-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
