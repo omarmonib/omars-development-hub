@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/omars-development-hub/static/css/main.357cd5fa.css",
+    "main.css": "/omars-development-hub/static/css/main.0201c559.css",
     "main.js": "/omars-development-hub/static/js/main.4d19eacc.js",
     "static/js/453.72bdca91.chunk.js": "/omars-development-hub/static/js/453.72bdca91.chunk.js",
     "index.html": "/omars-development-hub/index.html",
-    "main.357cd5fa.css.map": "/omars-development-hub/static/css/main.357cd5fa.css.map",
+    "main.0201c559.css.map": "/omars-development-hub/static/css/main.0201c559.css.map",
     "main.4d19eacc.js.map": "/omars-development-hub/static/js/main.4d19eacc.js.map",
     "453.72bdca91.chunk.js.map": "/omars-development-hub/static/js/453.72bdca91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.357cd5fa.css",
+    "static/css/main.0201c559.css",
     "static/js/main.4d19eacc.js"
   ]
 }
